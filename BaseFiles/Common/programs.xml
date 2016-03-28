@@ -1270,7 +1270,7 @@ Program.GoBackground();</ScriptSource>
     <ConditionType>OnTrue</ConditionType>
     <Conditions />
     <Commands />
-    <ScriptCondition>Program.AddFeature("", "Switch,Light,Dimmer", "HomeGenie.TurnOffDelay", "Automatic turn off delay (seconds)", "slider:0:3600:1");
+    <ScriptCondition>Program.AddFeature("", "Switch,Light,Dimmer", "HomeGenie.TurnOffDelay", "Automatic turn off delay (seconds)", "slider:0:36000:1");
 Program.Run();
 </ScriptCondition>
     <ScriptSource>When.ModuleParameterIsChanging((module, parameter) =&gt; {
@@ -1309,7 +1309,7 @@ Program.GoBackground();</ScriptSource>
     <Group>Energy Management</Group>
     <Features>
       <ProgramFeature>
-        <FieldType>slider:0:3600:1</FieldType>
+        <FieldType>slider:0:36000:1</FieldType>
         <ForDomains />
         <ForTypes>Switch,Light,Dimmer</ForTypes>
         <Property>HomeGenie.TurnOffDelay</Property>
